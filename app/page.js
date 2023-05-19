@@ -31,7 +31,7 @@ export default function Home() {
             <div className="mt-4 sm:mt-6">
               <Link
                 href="#"
-                className="inline-block bg-indigo-500 text-white px-5 py-3 rounded-lg shadow-lg uppercase tracking-wider font-semibold text-sm sm:text-base"
+                className="inline-block bg-indigo-500 hover:bg-indigo-400 md:hover:bg-green-400 active:bg-indigo-600 text-white px-5 py-3 rounded-lg shadow-lg uppercase tracking-wider font-semibold text-sm sm:text-base"
               >
                 Book your escape
               </Link>
