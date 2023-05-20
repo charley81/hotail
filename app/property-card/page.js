@@ -16,7 +16,7 @@ const data = {
     imageAlt: 'Rear view of modern home with pool',
     beds: 3,
     baths: 2,
-    title: 'Modern home in city center',
+    title: 'Modern home in city center in the center of Los Angeles',
     priceInCents: 190000,
     formattedPrice: '$1,900.00',
     reviewCount: 34,
