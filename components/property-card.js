@@ -33,7 +33,7 @@ const PropertyCard = ({ data }) => {
           {formattedPrice}
           <span className="text-gray-600 text-sm">/ wk</span>
         </p>
-        <p className="mt-4 text-teal-600 font-semibold flex">
+        <p className="mt-4 text-teal-600 font-semibold flex items-center">
           {new Array(5).fill(null).map((temp, i) => (
             <svg
               key={i}
@@ -41,7 +41,7 @@ const PropertyCard = ({ data }) => {
               viewBox="0 0 24 24"
               fill="currentColor"
               className={
-                i < rating ? 'text-yellow-400 h-4 w-4' : 'text-gray-400 h-4 w-4'
+                i < rating ? 'text-teal-600 h-4 w-4' : 'text-gray-400 h-4 w-4'
               }
             >
               <path
@@ -51,8 +51,8 @@ const PropertyCard = ({ data }) => {
               />
             </svg>
           ))}
-          <span className="text-gray-600 text-sm">
-            (based on {reviewCount} reviews)
+          <span className="text-gray-600 text-sm ml-2">
+            {reviewCount} reviews
           </span>
         </p>
       </div>
