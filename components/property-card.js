@@ -23,10 +23,15 @@ const PropertyCard = ({ data }) => {
         style={{ width: '100%', height: 'auto' }}
       />
       <div className="p-6">
-        <p className="text-gray-600 text-sm uppercase font-semibold tracking-wide">
-          beds: {beds} & baths: {baths}
-        </p>
-        <h4 className="font-semibold text-lg leading-tight truncate">
+        <div className="flex items-baseline">
+          <span className="bg-teal-500 text-white text-xs px-2 py-1 inline-block rounded-full">
+            NEW
+          </span>
+          <p className="text-gray-600 text-sm uppercase font-semibold tracking-wide ml-2">
+            beds: {beds} & baths: {baths}
+          </p>
+        </div>
+        <h4 className="font-semibold text-lg leading-tight truncate mt-1">
           {title}
         </h4>
         <p className="mt-1">
@@ -41,7 +46,7 @@ const PropertyCard = ({ data }) => {
               viewBox="0 0 24 24"
               fill="currentColor"
               className={
-                i < rating ? 'text-teal-600 h-4 w-4' : 'text-gray-400 h-4 w-4'
+                i < rating ? 'text-teal-500 h-4 w-4' : 'text-gray-400 h-4 w-4'
               }
             >
               <path
